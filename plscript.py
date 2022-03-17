@@ -19,7 +19,7 @@ data = {
 }
 
 
-async def login_pl(delay_sec=10):
+async def login_pl(delay_sec):
     center = data.get('center_name')
     category = data.get('category_name')
     subcategory = data.get('subcategory_name')
@@ -39,7 +39,7 @@ async def login_pl(delay_sec=10):
         login_button = driver.find_element(By.XPATH, '/html/body/app-root/div/app-login/'
                                                            'section/div/div/mat-card/form/button')
         login_button.click()
-        time.sleep(10)
+        time.sleep(5)
         driver.find_element(By.XPATH, '/html/body/app-root/div/app-dashboard/section/div/div[1]/div[2]/button').click()
         time.sleep(4)
         center_dropdown = driver.find_element(By.XPATH, '//*[@id="mat-select-value-1"]')
