@@ -7,7 +7,7 @@ load_dotenv()
 
 TOKEN = os.getenv('TOKEN')
 bot = Bot(token=TOKEN)
-ids = [434325361, 5107684929]
+ids = ["list of admins id"]
 dp = Dispatcher(bot)
 
 
